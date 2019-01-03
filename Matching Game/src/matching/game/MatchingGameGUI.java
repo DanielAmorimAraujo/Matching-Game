@@ -18,17 +18,18 @@ public class MatchingGameGUI extends javax.swing.JFrame {
     ArrayList <Integer> cards = new ArrayList(); //declares an integer ArrayList cards which will be used to store the randomly generated card sequence
     ArrayList <Integer> set = new ArrayList(); //declares an integer ArrayList set which will  be used to store two values for every card which will be then used to generate the cards ArrayList
     //declares ImageIcon variables to store the icons for each card face with a corresponding letter of the alphabet for differentiation - images stored in the Matching Game project folder
-    ImageIcon a = new ImageIcon("ICS4UE_U2A3A1_DanielAraujo - Matching Game (Mega Blastoise Icon).png");
-    ImageIcon b = new ImageIcon("ICS4UE_U2A3A1_DanielAraujo - Matching Game (Mega Blaziken Icon).png");
-    ImageIcon c = new ImageIcon("ICS4UE_U2A3A1_DanielAraujo - Matching Game (Mega Charizard X Icon).png");
-    ImageIcon d = new ImageIcon("ICS4UE_U2A3A1_DanielAraujo - Matching Game (Mega Gyarados Icon).png");
-    ImageIcon e = new ImageIcon("ICS4UE_U2A3A1_DanielAraujo - Matching Game (Mega Lucario Icon).png");
-    ImageIcon f = new ImageIcon("ICS4UE_U2A3A1_DanielAraujo - Matching Game (Mega Metagross Icon).png");
-    ImageIcon g = new ImageIcon("ICS4UE_U2A3A1_DanielAraujo - Matching Game (Mega Sceptile Icon).png");
-    ImageIcon h = new ImageIcon("ICS4UE_U2A3A1_DanielAraujo - Matching Game (Mega Swampert Icon).png");
-    ImageIcon i = new ImageIcon("ICS4UE_U2A3A1_DanielAraujo - Matching Game (Mega Tyranitar Icon).png");
-    ImageIcon j = new ImageIcon("ICS4UE_U2A3A1_DanielAraujo - Matching Game (Mega Venusaur Icon).png");
-    ImageIcon back = new ImageIcon("ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png"); //declares ImageIcon variable back to store the icon for the back of the card - image stored in the Matching Game project folder
+    ImageIcon a = new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Mega Blastoise Icon.png"));
+    ImageIcon b = new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Mega Blaziken Icon.png"));
+    ImageIcon c = new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Mega Charizard X Icon.png"));
+    ImageIcon d = new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Mega Gyarados Icon.png"));
+    ImageIcon e = new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Mega Lucario Icon.png"));
+    ImageIcon f = new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Mega Metagross Icon.png"));
+    ImageIcon g = new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Mega Sceptile Icon.png"));
+    ImageIcon h = new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Mega Swampert Icon.png"));
+    ImageIcon i = new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Mega Tyranitar Icon.png"));
+    ImageIcon j = new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Mega Venusaur Icon.png"));
+    ImageIcon back = new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png")); //declares ImageIcon variable back to store the icon for the back of the card - image stored in the Matching Game project folder
+    
     int intCount, intCard1, intCard2, intC1, intC2, intCardsLeft; /*declares intCount, intCard1, intCard2, intC1, intC2, and intCardLeft integer variables
     * intCount stores the number of cards selected by the user
     * intCard1 stores the value of the first card selected (value determined through the cards ArrayList)
@@ -90,8 +91,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         lblTitle.setText("Matching Game");
 
         btnCard1.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard1.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard1.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard1.setEnabled(false);
         btnCard1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,8 +101,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard2.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard2.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard2.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard2.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard2.setEnabled(false);
         btnCard2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,8 +111,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard3.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard3.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard3.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard3.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard3.setEnabled(false);
         btnCard3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,8 +121,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard4.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard4.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard4.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard4.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard4.setEnabled(false);
         btnCard4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -130,8 +131,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard5.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard5.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard5.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard5.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard5.setEnabled(false);
         btnCard5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -140,8 +141,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard6.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard6.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard6.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard6.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard6.setEnabled(false);
         btnCard6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,8 +151,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard7.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard7.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard7.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard7.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard7.setEnabled(false);
         btnCard7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,8 +161,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard8.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard8.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard8.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard8.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard8.setEnabled(false);
         btnCard8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,8 +171,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard9.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard9.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard9.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard9.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard9.setEnabled(false);
         btnCard9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -180,8 +181,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard10.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard10.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard10.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard10.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard10.setEnabled(false);
         btnCard10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,8 +191,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard11.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard11.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard11.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard11.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard11.setEnabled(false);
         btnCard11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -200,8 +201,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard12.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard12.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard12.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard12.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard12.setEnabled(false);
         btnCard12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -210,8 +211,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard13.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard13.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard13.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard13.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard13.setEnabled(false);
         btnCard13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -220,8 +221,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard14.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard14.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard14.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard14.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard14.setEnabled(false);
         btnCard14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -230,8 +231,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard15.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard15.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard15.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard15.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard15.setEnabled(false);
         btnCard15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -240,8 +241,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard16.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard16.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard16.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard16.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard16.setEnabled(false);
         btnCard16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -250,8 +251,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard17.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard17.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard17.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard17.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard17.setEnabled(false);
         btnCard17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -260,8 +261,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard18.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard18.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard18.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard18.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard18.setEnabled(false);
         btnCard18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -270,8 +271,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard19.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard19.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard19.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard19.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard19.setEnabled(false);
         btnCard19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -280,8 +281,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
         });
 
         btnCard20.setBackground(new java.awt.Color(255, 255, 255));
-        btnCard20.setIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Back Icon).png")); // NOI18N
-        btnCard20.setDisabledIcon(new javax.swing.ImageIcon("C:\\Users\\danie\\Documents\\ICS4UE\\Unit 2 - Arrays\\Activity 3 - Using Arrays in Game Programming\\ICS4UE_U2A3A1_DanielAraujo - Matching Game\\Matching Game\\ICS4UE_U2A3A1_DanielAraujo - Matching Game (Card Done Icon).png")); // NOI18N
+        btnCard20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Back Icon.png"))); // NOI18N
+        btnCard20.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/matching/game/imageresources/Card Done Icon.png"))); // NOI18N
         btnCard20.setEnabled(false);
         btnCard20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -360,9 +361,9 @@ public class MatchingGameGUI extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addComponent(btnCard1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, Short.MAX_VALUE)
                                     .addComponent(btnCard6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, Short.MAX_VALUE))
+                                .addGap(15, 15, 15)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(15, 15, 15)
                                         .addComponent(btnCard7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(15, 15, 15)
                                         .addComponent(btnCard8, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -371,7 +372,6 @@ public class MatchingGameGUI extends javax.swing.JFrame {
                                         .addGap(15, 15, 15)
                                         .addComponent(btnCard10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(15, 15, 15)
                                         .addComponent(btnCard2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(btnCard3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -406,8 +406,8 @@ public class MatchingGameGUI extends javax.swing.JFrame {
                     .addComponent(btnCard10, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(15, 15, 15)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnCard11, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnCard11, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnCard12, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnCard13, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnCard14, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
